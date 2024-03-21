@@ -1,4 +1,4 @@
-# Warren Garrido
+# Warren Garrido's work
 def encode(password):
     new_password = ""
     for char in password:
