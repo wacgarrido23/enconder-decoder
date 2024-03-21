@@ -1,3 +1,4 @@
+# Warren Garrido's work-
 def encode(password):
     new_password = ""
     for char in password:
@@ -9,20 +10,8 @@ def encode(password):
 
     return new_password
 
-
 def decode(password):
-    newPass = ""
-    for char in password:
-        tempNum = int(char)
-        tempNum = tempNum - 3
-        if tempNum < 0:
-            tempNum += 10
-        newPass += str(tempNum)
-
-    return newPass
-
-
-
+    pass
 
 if __name__ == "__main__":
     program_on = True
@@ -39,10 +28,15 @@ if __name__ == "__main__":
             encoded_password = encode(password)
             print("Your password has been encoded and stored!")
             print()
-
-        if option == 2:
+        try:
+            if option == 2:
                 decoded_password = decode(encoded_password)
                 print(f"The encoded password is {encoded_password}, and the original password is {decoded_password}.")
-
+        except:
+            print("Encode password first.")
+            print()
         if option == 3:
             exit()
+
+
+
