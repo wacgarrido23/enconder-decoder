@@ -6,6 +6,7 @@ def encode(password):
         if len(str(new_num)) == 2:
             new_num = new_num - 10
         new_password += str(new_num)
+
     return new_password
 
 
